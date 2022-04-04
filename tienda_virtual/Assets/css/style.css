@@ -1,0 +1,364 @@
+.app-sidebar__user-avatar {
+    width: 48px;
+    background: gray;
+    padding: 6px;
+}
+.app-sidebar__toggle{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15pt;
+}
+.app-sidebar__toggle::before{
+	display: none;
+}
+.headerRegister, .header-primary{
+	background: #009688;
+	color: #FFF;
+}
+.headerUpdate{
+	background: #007bff;
+	color: #FFF;
+}
+.textcenter{
+	text-align: center;
+}
+.textright{
+	text-align: right;
+}
+.textleft{
+	text-align: left;
+}
+.bootstrap-select > .dropdown-toggle{
+	border: 1px solid #CCC;
+}
+/*Estilos login*/
+#divLoading{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(254,254,255, .65);
+	z-index: 9999;
+	display: none;
+}
+#divLoading img{
+	width: 50px;
+	height: 50px;
+}
+.required{
+	color: red;
+	font-size: 13pt;
+	font-weight: bold;
+}
+/* style portada categoría */
+.prevPhoto {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #CCC;
+    position: relative;
+    cursor: pointer;
+    background: url(../images/uploads/portada_categoria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+.prevPhoto label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.prevPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.upimg, .notblock{
+	display: none !important;
+}
+.errorArchivo{
+	font-size: 16px;
+	font-family: arial;
+	color: #cc0000;
+	text-align: center;
+	font-weight: bold; 
+	margin-top: 10px;
+}
+.delPhoto{
+	color: #FFF;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 10;
+}
+#tbl_list_productos img{
+	width: 50px;
+}
+.imgProductoDelete{
+	width: 175px;
+}
+
+#imgCategoria{
+	text-align: center;
+}
+#imgCategoria img{
+	width: 200px;
+	margin: auto;
+}
+
+/* Upload fotos*/
+#containerImages{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#containerImages > div{
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+.prevImage{
+	border: 1px solid #CCC;
+	width: 120px;
+	height: 148px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.prevImage img{
+	width: 100%;
+}
+.inputUploadfile{
+	display: none;
+}
+.btnUploadfile, .btnDeleteImage{
+	border: 0;
+	background-color: #009688;
+	text-align: center;
+	padding: 2px 3px;
+	color: #FFF;
+	font-size: 9pt;
+	cursor: pointer;
+	width: 100%;
+}
+.btnDeleteImage{
+	background-color: #dc3545;
+}
+.prevImage .loading{
+	width: 30px;
+	height: 30px;
+}
+#celFotos img{
+	width: 150px;
+	margin: 10px;
+}
+/**espacion entre arribas con el atrubte margin***/
+.button {
+	background-color: #04AA6D;
+  	color: white;
+  	padding: 14px 20px;
+ 	 border: none;
+  	cursor: pointer;
+  	width: 100%;
+  	border-radius: 15px;
+  	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+	  	margin-top: -17px;
+
+
+    
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #2269d4;
+  border: 1px solid #105ceb;
+  
+}
+
+
+.button1 {
+	width: 280px;
+	height: 100px;
+	background: rgb(65, 146, 228);
+	border-radius: 15px;
+	transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+	padding: .375rem .75rem;
+  	border: 1px solid #105ceb;
+	color: white;
+  	margin: 20px;
+    
+}
+/**la pasar el cuerso cambia de color **/
+.button:hover {
+  cursor: pointer;
+  background: #2269d4;
+  border: 1px solid #105ceb;
+}
+
+
+.login-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.semibold-text.mb-2{
+	text-decoration: none;
+}
+/*Estilos login lo modique todo*/
+.form-control{
+	border: 2px solid #204ee8 ;
+	border-radius: 0;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 12pt;
+	color: #000000	;
+	border-radius: 15px;
+	text-align: center;
+}
+/*le indico que toodo el texto se centre en input**/
+.form-control:hover{
+	color: #000000	;
+	border: 3px solid #ec1c4e;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+}
+/*le indico que todo el texto se centre en input**/
+.form-control:focus{
+	border: 2px solid #204ee8;
+}
+/***estilos para el text dentro de input**/
+.form-control::placeholder{
+	color: #000000;
+}
+/**para que se ve mas elegenate**/
+.form-control:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+/**para que se ve mas elegenate**/
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+/*fondo de pantalla de login*/
+.material-half-bg{
+	background: url(../images/1.svg);
+
+}
+/*fondo de pantalla de login*/
+
+.material-half-bg{
+	background: url(../images/1.svg);
+}/*finaliza aqui*/
+
+/*fondo de restaurar contraseña*/
+
+.login-content{
+	background: url(../images/1.svg);
+
+}
+/*espacion entre los input **/
+/*entre espacios**/
+.login-form{
+	background-color: transparent;
+	margin-top: -17px;
+}
+/*cambios*/
+label{
+	color: #141414;
+	font-size: 18px;
+	order:-21;
+	margin:5 10px;
+}
+
+/*cambi  el color de la letra*/
+h1{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	color:red;
+	margin: 1px;
+}
+ 
+ .app-header{
+	 background: #007bff;
+ }
+ .app-header__logo{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #007bff;
+ }
+
+ /**se va ajuatar la pnatalla de l dispositivo**/
+ @media (max-width:450px){
+    h1{
+        font-size: 50rem;
+        text-align: center;
+        color: red;
+		
+
+    }
+}
+
+/**se me olvido la contraseña**/
+a{
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #000000;
+	
+}
+/*se le agrege otro color del mismo negro para quitar el color que tenia***/
+a:hover{
+	text-decoration: none;
+	color: #000000;
+}
+/*parte adminitrativa se le quito par acnto que tenia el input***/
+.form-control{
+	resize: none;
+}
+
+.form-control:hover{
+	resize: none;
+}
+/**botone para abrir el modal**/
+.btn-bootstrap{
+	padding: .255rem .75rem;
+  border-radius: .18rem;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  margin-top: 1rem;
+  transition: background-color .15s ease-in-out;
+}
+/***s mdofico la cabecera***/
+.headerRegister, .header-primary{
+	background:#007bff ;
+	color: #FFF;
+	
+}
+
